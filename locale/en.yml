@@ -1,0 +1,12 @@
+chrisdenend-generate-usernames:
+  # For more details on the format
+  # Checkout https://docs.flarum.org/extend/i18n/#appendix-a-standard-key-format
+  admin:
+    settings:
+      adj_tokens_label: Adjective String (comma separated)
+      noun_tokens_label: Noun String (comma separated)
+      digits_label: Number of random digits to append to generated username
+
+  forum:
+    username_select_placeholder: Generated Username
+    username_select_label: Select an anonymous user name
