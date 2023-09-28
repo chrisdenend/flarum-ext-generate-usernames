@@ -18,4 +18,10 @@ app.initializers.add('chrisdenend/flarum-ext-generate-usernames', () => {
       type: 'number',
       label: app.translator.trans('chrisdenend-generate-usernames.admin.settings.digits_label'),
     })
+    .registerSetting({
+      setting: 'chrisdenend-generate-usernames.option_count',
+      type: 'number',
+      label: app.translator.trans('chrisdenend-generate-usernames.admin.settings.option_count_label'),
+
+    })
 });

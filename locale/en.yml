@@ -6,6 +6,7 @@ chrisdenend-generate-usernames:
       adj_tokens_label: Adjective String (comma separated)
       noun_tokens_label: Noun String (comma separated)
       digits_label: Number of random digits to append to generated username
+      option_count_label: Number of generated usernames to display for selection
 
   forum:
     username_select_placeholder: Generated Username

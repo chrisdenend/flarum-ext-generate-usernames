@@ -26,6 +26,10 @@ flarum_admin_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('chrisd
     setting: 'chrisdenend-generate-usernames.digits',
     type: 'number',
     label: flarum_admin_app__WEBPACK_IMPORTED_MODULE_0___default().translator.trans('chrisdenend-generate-usernames.admin.settings.digits_label')
+  }).registerSetting({
+    setting: 'chrisdenend-generate-usernames.option_count',
+    type: 'number',
+    label: flarum_admin_app__WEBPACK_IMPORTED_MODULE_0___default().translator.trans('chrisdenend-generate-usernames.admin.settings.option_count_label')
   });
 });
 

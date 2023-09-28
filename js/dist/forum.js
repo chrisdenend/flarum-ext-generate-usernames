@@ -58,7 +58,9 @@ flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().initializers.add('chrisd
     return newMap;
   }
   (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__.extend)((flarum_forum_components_SignUpModal__WEBPACK_IMPORTED_MODULE_3___default().prototype), "oninit", function () {
-    this.usernameOptions = getUsernameOptions(15);
+    var optionCount = flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().forum.attribute('optionCount');
+    console.log("optionCount = " + optionCount);
+    this.usernameOptions = getUsernameOptions(optionCount);
     this.selectedUsername = flarum_common_utils_Stream__WEBPACK_IMPORTED_MODULE_1___default()(this.usernameOptions[0]);
   });
   (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__.extend)((flarum_forum_components_SignUpModal__WEBPACK_IMPORTED_MODULE_3___default().prototype), "onready", function () {
@@ -81,7 +83,7 @@ flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().initializers.add('chrisd
       disabled: this.loading
     }), m("label", {
       "for": "selectedUsername"
-    }, selectLabel)), 15);
+    }, selectLabel)), 30);
   });
   (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__.extend)((flarum_forum_components_SignUpModal__WEBPACK_IMPORTED_MODULE_3___default().prototype), "submitData", function (data) {
     // check that the username is valid

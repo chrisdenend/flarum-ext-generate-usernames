@@ -25,11 +25,13 @@ return [
     new Extend\Locales(__DIR__.'/locale'),
 
     (new Extend\Settings())
-    ->default('chrisdenend-generate-usernames.adj_tokens', "Adjective1,Adjective2")
+     ->default('chrisdenend-generate-usernames.adj_tokens', "Adjective1,Adjective2")
      ->default('chrisdenend-generate-usernames.noun_tokens', "Noun1,Noun2")
      ->default('chrisdenend-generate-usernames.digits', "3")
+     ->default('chrisdenend-generate-usernames.option_count', "10")
      ->serializeToForum('adjTokens', 'chrisdenend-generate-usernames.adj_tokens', null)
      ->serializeToForum('nounTokens', 'chrisdenend-generate-usernames.noun_tokens', null)
      ->serializeToForum('usernameDigits', 'chrisdenend-generate-usernames.digits', null)
+     ->serializeToForum('optionCount', 'chrisdenend-generate-usernames.option_count', null)
 
 ];

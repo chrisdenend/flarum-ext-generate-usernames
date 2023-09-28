@@ -53,7 +53,11 @@ app.initializers.add('chrisdenend/flarum-ext-generate-usernames', () => {
   
   extend(SignUpModal.prototype, "oninit", function () {
 
-    this.usernameOptions = getUsernameOptions(15);
+    const optionCount = app.forum.attribute('optionCount');
+
+    console.log("optionCount = " + optionCount);
+
+    this.usernameOptions = getUsernameOptions(optionCount);
 
     this.selectedUsername = Stream(this.usernameOptions[0]);
 
@@ -88,7 +92,7 @@ app.initializers.add('chrisdenend/flarum-ext-generate-usernames', () => {
         </Select>
         <label for="selectedUsername">{selectLabel}</label>
     </div>,
-      15
+      30
     )
 
   });
