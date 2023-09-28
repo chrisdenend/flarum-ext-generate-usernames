@@ -23,12 +23,12 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "GenerateUsernames",
-            "category": "",
+            "title": "Generate Usernames",
+            "category": "feature",
             "icon": {
-                "name": "",
-                "color": "",
-                "backgroundColor": ""
+                "name": "fas fa-user-tag",
+                "color": "#ffffff",
+                "backgroundColor": "#4D698E "
             }
         },
         "flarum-cli": {
