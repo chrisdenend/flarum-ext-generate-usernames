@@ -59,7 +59,6 @@ flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().initializers.add('chrisd
   }
   (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__.extend)((flarum_forum_components_SignUpModal__WEBPACK_IMPORTED_MODULE_3___default().prototype), "oninit", function () {
     var optionCount = flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().forum.attribute('optionCount');
-    console.log("optionCount = " + optionCount);
     this.usernameOptions = getUsernameOptions(optionCount);
     this.selectedUsername = flarum_common_utils_Stream__WEBPACK_IMPORTED_MODULE_1___default()(this.usernameOptions[0]);
   });

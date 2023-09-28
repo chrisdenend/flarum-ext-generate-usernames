@@ -55,8 +55,6 @@ app.initializers.add('chrisdenend/flarum-ext-generate-usernames', () => {
 
     const optionCount = app.forum.attribute('optionCount');
 
-    console.log("optionCount = " + optionCount);
-
     this.usernameOptions = getUsernameOptions(optionCount);
 
     this.selectedUsername = Stream(this.usernameOptions[0]);
