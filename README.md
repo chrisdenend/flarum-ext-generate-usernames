@@ -1,4 +1,4 @@
-# GenerateUsernames
+# Generate Usernames
 
 ![License](https://img.shields.io/badge/license-Unlicense-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/chrisdenend/flarum-ext-generate-usernames.svg)](https://packagist.org/packages/chrisdenend/flarum-ext-generate-usernames) [![Total Downloads](https://img.shields.io/packagist/dt/chrisdenend/flarum-ext-generate-usernames.svg)](https://packagist.org/packages/chrisdenend/flarum-ext-generate-usernames)
 
