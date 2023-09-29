@@ -63,7 +63,7 @@ flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().initializers.add('chrisd
     this.selectedUsername = flarum_common_utils_Stream__WEBPACK_IMPORTED_MODULE_1___default()(this.usernameOptions[0]);
   });
   (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__.extend)((flarum_forum_components_SignUpModal__WEBPACK_IMPORTED_MODULE_3___default().prototype), "onready", function () {
-    this.$('[name=email]').select();
+    this.$('[name=selectedUsername]').focus();
   });
   (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__.extend)((flarum_forum_components_SignUpModal__WEBPACK_IMPORTED_MODULE_3___default().prototype), "fields", function (items) {
     var usernameSelectLabel = flarum_common_utils_extractText__WEBPACK_IMPORTED_MODULE_4___default()(flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().translator.trans("chrisdenend-generate-usernames.forum.username_select_placeholder"));
@@ -80,7 +80,7 @@ flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().initializers.add('chrisd
       placeholder: usernameSelectLabel,
       "aria-label": usernameSelectLabel,
       disabled: this.loading
-    }), m("label", {
+    }), m("br", null), m("label", {
       "for": "selectedUsername"
     }, selectLabel)), 30);
   });

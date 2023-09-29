@@ -63,7 +63,7 @@ app.initializers.add('chrisdenend/flarum-ext-generate-usernames', () => {
 
   extend(SignUpModal.prototype, "onready", function () {
 
-   this.$('[name=email]').select();
+    this.$('[name=selectedUsername]').focus();
 
   })
 
@@ -87,7 +87,7 @@ app.initializers.add('chrisdenend/flarum-ext-generate-usernames', () => {
           aria-label={usernameSelectLabel}
           disabled={this.loading}
           >
-        </Select>
+        </Select><br></br>
         <label for="selectedUsername">{selectLabel}</label>
     </div>,
       30
